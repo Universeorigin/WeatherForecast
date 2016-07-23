@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6ff9c1"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_city"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_grey" />
+
+        <ImageView
+            android:id="@+id/iv_addOtherCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/titleText"
+            android:layout_marginRight="18dp"
+            android:src="@android:drawable/ic_input_add" />
+
+    </RelativeLayout>
+    <ScrollView 
+        android:id="@+id/popScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical">
+            
+            <include layout="@layout/popular_city"/>
+
+            <include layout="@layout/popular_spot" />
+
+        </LinearLayout>
+    </ScrollView>
+    
+    <ListView
+		        android:id="@+id/lv_city"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:scrollbars="none" 
+		        android:cacheColorHint="#00000000"
+		        android:listSelector="#00000000"
+		        android:divider="@color/dark_grey"
+		        android:dividerHeight="1px"
+		        android:visibility="gone" />
+</LinearLayout>

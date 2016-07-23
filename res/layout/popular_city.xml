@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popcity"
+        android:textSize="12sp"
+        android:textColor="#381801"
+        android:layout_gravity="center_horizontal"/>
+    
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/gps"
+                style="@style/ButtonTextViewStyle1"
+                android:background="@drawable/button_shape"
+                android:text="@string/gps" />
+            
+            <Button 
+                android:id="@+id/beijing"
+                android:text="@string/beijing"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+            
+            <Button 
+                android:id="@+id/tianjin"
+                android:text="@string/tianjin"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/shangahi"
+                style="@style/ButtonTextViewStyle1"
+                android:background="@drawable/button_shape"
+                android:text="@string/shangahi" />
+            
+            <Button 
+                android:id="@+id/chongqing"
+                android:text="@string/chongqing"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+            
+            <Button 
+                android:id="@+id/shenyang"
+                android:text="@string/shenyang"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+           android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/dalian"
+                style="@style/ButtonTextViewStyle1"
+                android:background="@drawable/button_shape"
+                android:text="@string/dalian" />
+            
+            <Button 
+                android:id="@+id/changchun"
+                android:text="@string/changchun"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+            
+            <Button 
+                android:id="@+id/haerbin"
+                android:text="@string/haerbin"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/zhengzhou"
+                style="@style/ButtonTextViewStyle1"
+                android:background="@drawable/button_shape"
+                android:text="@string/zhengzhou" />
+            
+            <Button 
+                android:id="@+id/wuhan"
+                android:text="@string/wuhan"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+            
+            <Button 
+                android:id="@+id/changsha"
+                android:text="@string/changsha"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/guangzhou"
+                style="@style/ButtonTextViewStyle1"
+                android:background="@drawable/button_shape"
+                android:text="@string/guangzhou" />
+            
+            <Button 
+                android:id="@+id/shenzhen"
+                android:text="@string/shenzhen"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+            
+            <Button 
+                android:id="@+id/nanjing"
+                android:text="@string/nanjing"
+                android:background="@drawable/button_shape"
+                style="@style/ButtonTextViewStyle1"/>
+        </LinearLayout>
+        
+
+</LinearLayout>

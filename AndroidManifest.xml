@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.weatherforecast"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+    <application
+        android:name="com.fangyu.weather.WeatherApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <meta-data
+        android:name="com.thinkland.juheapi.openid"
+        android:value="JH5b7a8d32f11ab720eb1aaab166a8aa63" />
+        
+        <activity android:name="com.fangyu.weather.WeatherActivity"
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.fangyu.weather.CityActivity"
+            android:screenOrientation="portrait" />
+        <service android:name="com.fangyu.weather.service.WeatherService"/>
+        
+    </application>
+
+</manifest>
